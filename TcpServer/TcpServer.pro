@@ -11,10 +11,14 @@ CONFIG += c++17
 SOURCES += \
     main.cpp \
     mytcpserver.cpp \
+    mytcpsocket.cpp \
+    protocol.cpp \
     widget.cpp
 
 HEADERS += \
     mytcpserver.h \
+    mytcpsocket.h \
+    protocol.h \
     widget.h
 
 FORMS += \

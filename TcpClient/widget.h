@@ -29,6 +29,8 @@ private slots:
      * @brief showConnected 弹窗显示是否成功连接
      */
     void showConnected();
+    void on_pushButton_clicked();
+
 private:
     Ui::Widget *ui;
     QString m_strIP;                // IP地址

@@ -233,8 +233,16 @@ incomingConnection(方法中)
 {
     // 。。。
     MyTcpSocket *pTcpSocket = new MyTcpSocket;
+    // 为socket设置描述符，相当于绑定一个数据来源
     pTcpSocket->setSocketDescriptor(socketDescrptor);
+    // 将socket放入列表中
     m_tcpSocketList.append(pTcpSocket);
 }
+```
+
+-  客户端 发送信息
+
+```
+
 ```
 
