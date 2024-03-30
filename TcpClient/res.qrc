@@ -1,5 +1,7 @@
 <RCC>
     <qresource prefix="/">
         <file>client.config</file>
+        <file>images/dir.png</file>
+        <file>images/reg.png</file>
     </qresource>
 </RCC>

@@ -2,7 +2,7 @@
 #define WIDGET_H
 
 #include <QWidget>
-
+#include "mytcpserver.h"
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class Widget;
@@ -17,12 +17,18 @@ public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
 
-    void loadingConfig();
+    QString getUsrRootDirPath();
 
+    static Widget &getInstance();
+
+    void loadingConfig();
+signals:
+    void sendQuitSignal();
 private:
     Ui::Widget *ui;
 
     QString m_strIP;
     quint16 m_usPort;
+    QString m_rootDir;
 };
 #endif // WIDGET_H

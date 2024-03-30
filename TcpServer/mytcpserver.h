@@ -18,6 +18,19 @@ public:
     // 当有新的连接可用时，QTcpServer调用这个虚函数。socketDescriptor参数是已接受连接的本机套接字描述符。
     void incomingConnection(qintptr socketDescriptor);
 
+public slots:
+
+    void deleteSocket(MyTcpSocket *socket);
+
+
+    /**
+     * 处理转发请求
+     * @brief handleRelay
+     * @param name
+     * @param pdu
+     */
+    void handleRelay(QString name,PDU* pdu);
+
 private:
     QList<MyTcpSocket*> m_tcpSocketList;
 };

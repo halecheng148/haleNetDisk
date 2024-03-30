@@ -9,15 +9,30 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    book.cpp \
+    friend.cpp \
     main.cpp \
+    online.cpp \
+    opewidget.cpp \
+    privatechat.cpp \
     protocol.cpp \
+    sharefile.cpp \
     widget.cpp
 
 HEADERS += \
+    book.h \
+    friend.h \
+    online.h \
+    opewidget.h \
+    privatechat.h \
     protocol.h \
+    sharefile.h \
     widget.h
 
 FORMS += \
+    online.ui \
+    privatechat.ui \
+    sharefile.ui \
     widget.ui
 
 # Default rules for deployment.
